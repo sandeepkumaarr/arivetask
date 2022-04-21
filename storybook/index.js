@@ -5,13 +5,15 @@ import {AppRegistry} from 'react-native';
 import {getStorybookUI, configure, addDecorator} from '@storybook/react-native';
 import {withKnobs} from '@storybook/addon-knobs';
 import {loadStories} from './storyLoader';
+import {ThemeProvider} from '@shopify/restyle';
+import theme from '../src/themes/default';
 
 import './rn-addons';
 
 // enables knobs for all stories
 addDecorator(withKnobs);
 
-addDecorator(story => story());
+addDecorator(story => <ThemeProvider theme={theme}>{story()}</ThemeProvider>);
 
 // import stories
 configure(() => {

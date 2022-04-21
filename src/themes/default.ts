@@ -1,16 +1,20 @@
 import {createTheme} from '@shopify/restyle';
-import {verticalScale, moderateScale} from 'react-native-size-matters';
-import {Dimensions, Platform} from 'react-native';
+import {moderateScale} from 'react-native-size-matters';
 
 const palette = {
-  MarineBlue: '#05415F',
+  cyanBlue: '#7fa2bb',
+  WhiteSmoke: '#f5f5f5',
+
+  black: '#0B0B0B',
+  white: '#F0F2F3',
 };
 
 const theme = createTheme({
   colors: {
-    primary: palette.MarineBlue,
-
-    ...palette,
+    primary: palette.WhiteSmoke,
+    secondary: palette.cyanBlue,
+    buttonText: palette.white,
+    buttonText_off: palette.black,
   },
   spacing: {
     nil: 0,
@@ -39,29 +43,36 @@ const theme = createTheme({
   },
   breakpoints: {
     phone: 0,
-    longPhone: {
-      width: 0,
-      height: 812,
-    },
     tablet: 768,
-    largeTablet: 1024,
-  },
-
-  textVariants: {
-    default: {
-      fontFamily: 'SFProText-Bold',
-      fontSize: moderateScale(32),
-      lineHeight: moderateScale(44),
-    },
   },
 
   buttonVariants: {
-    default: {
-      padding: 4,
-      borderRadius: moderateScale(8),
+    defaults: {},
+    subcategory: {
+      borderRadius: moderateScale(10),
       alignItems: 'center',
       justifyContent: 'center',
+      paddingVertical: 6,
     },
+  },
+  textVariants: {
+    default: {},
+    button: {
+      fontSize: moderateScale(16),
+      color: 'buttonText',
+      fontWeight: '600',
+      fontFamily: 'SFProText-Bold',
+    },
+
+    buttonoff: {
+      fontSize: moderateScale(16),
+      color: 'buttonText_off',
+      fontWeight: '600',
+      fontFamily: 'SFProText-Bold',
+    },
+  },
+  bannerVariants: {
+    default: {},
   },
 });
 
