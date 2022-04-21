@@ -27,6 +27,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+const STORYBOOK_START = true;
+
 const Section: React.FC<{
   title: string;
 }> = ({children, title}) => {
@@ -112,4 +114,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default STORYBOOK_START ? require('./storybook').default : App;
