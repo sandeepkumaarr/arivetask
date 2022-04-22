@@ -117,7 +117,7 @@ const theme = createTheme({
   BannerVariants: {
     default: {},
     categoryCard: {
-      height: Math.round(moderateVerticalScale(220)),
+      height: Math.round(moderateVerticalScale(200)),
     },
     CategoryHome: {
       height: Math.round(moderateVerticalScale(150)),

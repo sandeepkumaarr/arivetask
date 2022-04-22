@@ -42,7 +42,10 @@ const CategoryScreen = () => {
               onPress={() =>
                 navigation.navigate(
                   routes.CATEGORY_DETAIL_SCREEN as never,
-                  {} as never,
+                  {
+                    header: item.bannerText,
+                    image: item.image,
+                  } as never,
                 )
               }>
               <Banner

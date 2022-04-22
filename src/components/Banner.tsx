@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   image: {
     flex: 1,
     justifyContent: 'center',
-    height: Math.round(moderateVerticalScale(220)),
+    height: Math.round(moderateVerticalScale(200)),
     borderRadius: Math.round(moderateScale(20)),
     overflow: 'hidden',
   },
