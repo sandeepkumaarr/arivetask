@@ -4,6 +4,7 @@ import {moderateScale, moderateVerticalScale} from 'react-native-size-matters';
 const palette = {
   cyanBlue: '#7fa2bb',
   WhiteSmoke: '#f5f5f5',
+  grey: '#8a8a8a',
 
   black: '#0B0B0B',
   white: '#F0F2F3',
@@ -15,6 +16,8 @@ const theme = createTheme({
     secondary: palette.cyanBlue,
     buttonText: palette.white,
     buttonText_off: palette.black,
+    product_name: palette.grey,
+    product_desc: palette.black,
   },
   spacing: {
     nil: 0,
@@ -77,12 +80,34 @@ const theme = createTheme({
       fontWeight: 'bold',
       textAlign: 'center',
     },
+    ProductName: {
+      fontSize: moderateScale(15),
+      color: 'product_name',
+      fontWeight: '800',
+      fontFamily: 'SFProText-Bold',
+    },
+
+    ProductDescription: {
+      fontSize: moderateScale(16),
+      color: 'product_desc',
+      fontWeight: '600',
+      fontFamily: 'SFProText-Bold',
+    },
+    price: {
+      fontSize: moderateScale(16),
+      color: 'product_desc',
+      fontWeight: '800',
+      fontFamily: 'SFProText-Bold',
+    },
   },
   BannerVariants: {
     default: {},
     categoryCard: {
       height: Math.round(moderateVerticalScale(220)),
     },
+  },
+  ProductCardVariants: {
+    default: {},
   },
 });
 
