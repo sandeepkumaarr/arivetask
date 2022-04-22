@@ -5,7 +5,10 @@ import {
   VariantProps,
   backgroundColor,
   BackgroundColorProps,
+  LayoutProps,
+  SpacingProps,
   useRestyle,
+  ResponsiveValue,
 } from '@shopify/restyle';
 import {ImageBackground, StyleSheet, ImageSourcePropType} from 'react-native';
 import {Theme} from '../themes/default';
@@ -22,19 +25,26 @@ const BannerContainer = createRestyleComponent<
 const restyleFunctions = [BannerVariant as any, backgroundColor];
 
 type Props = VariantProps<Theme, 'BannerVariants'> &
-  BackgroundColorProps<Theme> & {
+  BackgroundColorProps<Theme> &
+  LayoutProps<Theme> &
+  SpacingProps<Theme> & {
     bannerText: string;
     image: ImageSourcePropType;
+    extraStyles?: object;
+    textVariant: ResponsiveValue<keyof Theme['textVariants'], Theme>;
+    textStyle?: object;
   };
 
 const Banner = ({bannerText, ...rest}: Props) => {
   const props = useRestyle([restyleFunctions], rest);
-  const {image} = rest;
+  const {image, extraStyles, textVariant, textStyle} = rest;
 
   return (
     <BannerContainer {...props}>
-      <ImageBackground source={image} style={styles.image}>
-        <Text variant={'bannerHeader'}>{bannerText}</Text>
+      <ImageBackground source={image} style={[styles.image, extraStyles]}>
+        <Text variant={textVariant} style={textStyle}>
+          {bannerText}
+        </Text>
       </ImageBackground>
     </BannerContainer>
   );

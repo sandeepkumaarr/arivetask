@@ -18,6 +18,7 @@ const theme = createTheme({
     buttonText_off: palette.black,
     product_name: palette.grey,
     product_desc: palette.black,
+    header: palette.cyanBlue,
   },
   spacing: {
     nil: 0,
@@ -80,6 +81,12 @@ const theme = createTheme({
       fontWeight: 'bold',
       textAlign: 'center',
     },
+    bannerHeader_small: {
+      color: 'buttonText',
+      fontSize: moderateScale(20),
+      fontWeight: 'bold',
+      textAlign: 'center',
+    },
     ProductName: {
       fontSize: moderateScale(15),
       color: 'product_name',
@@ -99,11 +106,28 @@ const theme = createTheme({
       fontWeight: '800',
       fontFamily: 'SFProText-Bold',
     },
+    header: {
+      color: 'header',
+      fontSize: moderateScale(28),
+      fontWeight: 'bold',
+      textAlign: 'center',
+      fontStyle: 'italic',
+    },
   },
   BannerVariants: {
     default: {},
     categoryCard: {
       height: Math.round(moderateVerticalScale(220)),
+    },
+    CategoryHome: {
+      height: Math.round(moderateVerticalScale(150)),
+      shadowColor: 'header',
+      shadowOffset: {
+        width: 1,
+        height: 1,
+      },
+      shadowOpacity: 0.3,
+      elevation: 2,
     },
   },
   ProductCardVariants: {

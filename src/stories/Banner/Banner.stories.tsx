@@ -21,5 +21,6 @@ storiesOf('Banner', module)
       variant={'categoryCard'}
       bannerText={'Personal Care'}
       image={image}
+      textVariant={'bannerHeader'}
     />
   ));
