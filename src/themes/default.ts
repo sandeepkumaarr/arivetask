@@ -1,5 +1,5 @@
 import {createTheme} from '@shopify/restyle';
-import {moderateScale} from 'react-native-size-matters';
+import {moderateScale, moderateVerticalScale} from 'react-native-size-matters';
 
 const palette = {
   cyanBlue: '#7fa2bb',
@@ -70,9 +70,19 @@ const theme = createTheme({
       fontWeight: '600',
       fontFamily: 'SFProText-Bold',
     },
+
+    bannerHeader: {
+      color: 'buttonText',
+      fontSize: moderateScale(36),
+      fontWeight: 'bold',
+      textAlign: 'center',
+    },
   },
-  bannerVariants: {
+  BannerVariants: {
     default: {},
+    categoryCard: {
+      height: Math.round(moderateVerticalScale(220)),
+    },
   },
 });
 
