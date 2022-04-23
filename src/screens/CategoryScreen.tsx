@@ -21,7 +21,6 @@ const CategoryScreen = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log('get');
     dispatch(getCategory());
     dispatch(getAllProducts());
   }, []);

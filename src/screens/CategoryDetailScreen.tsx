@@ -1,8 +1,13 @@
-import {StyleSheet, SafeAreaView, FlatList} from 'react-native';
+import {
+  StyleSheet,
+  SafeAreaView,
+  FlatList,
+  TouchableOpacity,
+} from 'react-native';
 import React, {useState} from 'react';
-import {RouteProp, useRoute} from '@react-navigation/native';
-import {Banner, Box, Button, ProductCard} from '../components';
-import {Source} from 'react-native-fast-image';
+import {RouteProp, useNavigation, useRoute} from '@react-navigation/native';
+import {Banner, Box, Button, ProductCard, Text} from '../components';
+import FastImage, {Source} from 'react-native-fast-image';
 import {State} from '../types/commons';
 import {useSelector} from 'react-redux';
 import {moderateScale, moderateVerticalScale} from 'react-native-size-matters';
@@ -14,6 +19,7 @@ import {
 import ProductCardPlaceholder from '../skeletons/ProductCardPlaceholder';
 
 const CategoryDetailScreen = () => {
+  const navigation = useNavigation();
   const dispatch = useDispatch();
   const CategoryListData = useSelector(
     (state: State) => state.categoryDetails.CategoryList,
@@ -47,6 +53,19 @@ const CategoryDetailScreen = () => {
 
   return (
     <SafeAreaView style={{flex: 1}}>
+      <Box paddingHorizontal={2} marginBottom={2}>
+        <TouchableOpacity
+          style={styles.back}
+          onPress={() => navigation.goBack()}>
+          <FastImage
+            style={{width: 50, height: 30}}
+            source={require('../assets/images/back.png')}
+            resizeMode={FastImage.resizeMode.contain}
+          />
+          <Text variant={'ProductName'}>Back</Text>
+        </TouchableOpacity>
+      </Box>
+
       <Box>
         <Banner
           marginHorizontal={3}
@@ -139,5 +158,9 @@ const styles = StyleSheet.create({
     marginVertical: Math.round(moderateVerticalScale(20)),
     marginLeft: Math.round(moderateScale(20)),
     marginRight: Math.round(moderateScale(20)),
+  },
+  back: {
+    flexDirection: 'row',
+    alignItems: 'center',
   },
 });

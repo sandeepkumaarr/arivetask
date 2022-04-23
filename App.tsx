@@ -10,10 +10,12 @@
 
 import {ThemeProvider} from '@shopify/restyle';
 import React from 'react';
-import {StatusBar, StyleSheet, Text} from 'react-native';
+import {StatusBar, StyleSheet, LogBox} from 'react-native';
 import Navigator from './src/navigation/Navigator';
 
 import theme from './src/themes/default';
+
+LogBox.ignoreAllLogs();
 
 const STORYBOOK_START = false;
 
