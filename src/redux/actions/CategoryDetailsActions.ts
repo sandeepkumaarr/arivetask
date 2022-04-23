@@ -1,4 +1,5 @@
 import {createAsyncThunk} from '@reduxjs/toolkit';
+import {SubCategory} from '../../types/category';
 
 export const getCategory = createAsyncThunk(
   'categoryDetails/getCategory',
@@ -11,9 +12,9 @@ export const getCategory = createAsyncThunk(
   },
 );
 
-export const getSubCategory = createAsyncThunk(
+export const getSubCategory = createAsyncThunk<Array<SubCategory>, string>(
   'categoryDetails/getSubCategory',
-  async (subcat, {rejectWithValue}) => {
+  async (subcat, thunkApi) => {
     const res = await fetch(
       `https://fakestoreapi.com/products/category/${subcat}`,
     ).then(data => data.json());

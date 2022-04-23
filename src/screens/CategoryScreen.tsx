@@ -23,7 +23,6 @@ const CategoryScreen = () => {
   useEffect(() => {
     console.log('get');
     dispatch(getCategory());
-
     dispatch(getAllProducts());
   }, []);
 
@@ -32,6 +31,7 @@ const CategoryScreen = () => {
       <Box alignItems={'center'} marginTop={10} marginBottom={20}>
         <Text variant={'header'}>Categories</Text>
       </Box>
+
       <FlatList
         columnWrapperStyle={{justifyContent: 'space-around'}}
         data={CategoryData}
@@ -72,5 +72,3 @@ const CategoryScreen = () => {
 };
 
 export default CategoryScreen;
-
-const styles = StyleSheet.create({});

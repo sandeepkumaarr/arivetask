@@ -19,6 +19,7 @@ target 'Arivetask' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+
   target 'ArivetaskTests' do
     inherit! :complete
     # Pods for testing

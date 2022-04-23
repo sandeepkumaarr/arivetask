@@ -1,6 +1,9 @@
 /**
  * @format
  */
+
+import 'react-native-get-random-values';
+
 import React, {useEffect} from 'react';
 import {AppRegistry} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';

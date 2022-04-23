@@ -18,18 +18,18 @@
 		1F2E396098D0476EA455CFBD /* SF-Pro-Text-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7B5BADCEA5EC414CBF2582F6 /* SF-Pro-Text-Black.otf */; };
 		252DCA86771440E0B83C88D2 /* SF-Pro-Text-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BD9D1C9450C145688D2C6F68 /* SF-Pro-Text-UltralightItalic.otf */; };
 		2851289527A14BC1B55A41B1 /* SF-Pro-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2940ACA1F46D4A65912E401A /* SF-Pro-Text-HeavyItalic.otf */; };
-		314A2F59F384F8019A90ED3C /* libPods-Arivetask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FE0A0486F0FACB3660CBAE /* libPods-Arivetask.a */; };
 		4BCB2126C56A4F159FB83F13 /* SF-Pro-Text-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB08F9BB855240ADAEA710F7 /* SF-Pro-Text-Ultralight.otf */; };
 		5227AD9CD2C94FA29E2EBC43 /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7D2638FA1D0E4DC0A999CB6D /* SF-Pro-Text-LightItalic.otf */; };
 		55A69DA6DCF546928FAC123D /* SF-Pro-Text-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D463A13CDFCA4EC7A3A89ACF /* SF-Pro-Text-Thin.otf */; };
 		61C29E5C988249159FC9BCE1 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F6DF9CEF07E94F4682CF1C2C /* SF-Pro-Text-Medium.otf */; };
-		81A2B190B12C0857EAF908B0 /* libPods-Arivetask-ArivetaskTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9E4D69E42B4DF37B2A5C35 /* libPods-Arivetask-ArivetaskTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		90C5427A5EFFE74C3848569D /* libPods-Arivetask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A8505CD26785DD92EFB593 /* libPods-Arivetask.a */; };
 		9115F10A7FB045E4867322F4 /* SF-Pro-Text-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = DDA80A2E7BA447478E18C4DF /* SF-Pro-Text-BlackItalic.otf */; };
 		99A68F7FBAE94A65BD6E543F /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = F4962F52B2AE436EA64900CC /* SF-Pro-Text-MediumItalic.otf */; };
 		A2F2B679F0164B6AB1ED7894 /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D879E6FD228E450BA7C7BD33 /* SF-Pro-Text-RegularItalic.otf */; };
 		B8F56B65DE9E48C0807CC5FD /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 273BC3BBB82C4C5E84844DB9 /* SF-Pro-Text-Light.otf */; };
 		BB06644B8B0B45F58815AF27 /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E147A961C87042E3B3AECD57 /* SF-Pro-Text-SemiboldItalic.otf */; };
+		C3D0D3FB54DCB71893271A80 /* libPods-Arivetask-ArivetaskTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A27297CC29B31F9EAEE75197 /* libPods-Arivetask-ArivetaskTests.a */; };
 		D741301E321A4E2DBFCA0794 /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E60F7005643406B9A4A78E5 /* SF-Pro-Text-Heavy.otf */; };
 		FDC0FDBAC23440D2AD0AE6A6 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8783FB4E33124642BF32A062 /* SF-Pro-Text-Bold.otf */; };
 /* End PBXBuildFile section */
@@ -48,6 +48,7 @@
 		00E356EE1AD99517003FC87E /* ArivetaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArivetaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ArivetaskTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArivetaskTests.m; sourceTree = "<group>"; };
+		11A8505CD26785DD92EFB593 /* libPods-Arivetask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Arivetask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* Arivetask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arivetask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Arivetask/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Arivetask/AppDelegate.mm; sourceTree = "<group>"; };
@@ -56,22 +57,20 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Arivetask/main.m; sourceTree = "<group>"; };
 		273BC3BBB82C4C5E84844DB9 /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Light.otf"; path = "../src/assets/fonts/SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
 		2940ACA1F46D4A65912E401A /* SF-Pro-Text-HeavyItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-HeavyItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
-		4AEF2D1688EE4DEC1E45F43F /* Pods-Arivetask-ArivetaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arivetask-ArivetaskTests.debug.xcconfig"; path = "Target Support Files/Pods-Arivetask-ArivetaskTests/Pods-Arivetask-ArivetaskTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5C951E9FCE3499A7B2E27727 /* Pods-Arivetask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arivetask.release.xcconfig"; path = "Target Support Files/Pods-Arivetask/Pods-Arivetask.release.xcconfig"; sourceTree = "<group>"; };
-		6F9E4D69E42B4DF37B2A5C35 /* libPods-Arivetask-ArivetaskTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Arivetask-ArivetaskTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F192559DC1EB365B11986C6 /* Pods-Arivetask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arivetask.debug.xcconfig"; path = "Target Support Files/Pods-Arivetask/Pods-Arivetask.debug.xcconfig"; sourceTree = "<group>"; };
+		55E3F1C20977A747484774B7 /* Pods-Arivetask-ArivetaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arivetask-ArivetaskTests.release.xcconfig"; path = "Target Support Files/Pods-Arivetask-ArivetaskTests/Pods-Arivetask-ArivetaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		71ADAA2D14FA438FAB38D300 /* SF-Pro-Text-ThinItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-ThinItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-ThinItalic.otf"; sourceTree = "<group>"; };
 		75C2218CAC0D42C1B046CFD5 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Semibold.otf"; path = "../src/assets/fonts/SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		7B5BADCEA5EC414CBF2582F6 /* SF-Pro-Text-Black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Black.otf"; path = "../src/assets/fonts/SF-Pro-Text-Black.otf"; sourceTree = "<group>"; };
 		7D2638FA1D0E4DC0A999CB6D /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-LightItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Arivetask/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8783FB4E33124642BF32A062 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Bold.otf"; path = "../src/assets/fonts/SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
-		8E24F48737062CB72CA44249 /* Pods-Arivetask-ArivetaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arivetask-ArivetaskTests.release.xcconfig"; path = "Target Support Files/Pods-Arivetask-ArivetaskTests/Pods-Arivetask-ArivetaskTests.release.xcconfig"; sourceTree = "<group>"; };
-		945384D0FC77813E22B93A04 /* Pods-Arivetask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arivetask.debug.xcconfig"; path = "Target Support Files/Pods-Arivetask/Pods-Arivetask.debug.xcconfig"; sourceTree = "<group>"; };
 		9E60F7005643406B9A4A78E5 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Heavy.otf"; path = "../src/assets/fonts/SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		A27297CC29B31F9EAEE75197 /* libPods-Arivetask-ArivetaskTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Arivetask-ArivetaskTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9D1C9450C145688D2C6F68 /* SF-Pro-Text-UltralightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-UltralightItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-UltralightItalic.otf"; sourceTree = "<group>"; };
+		C8B14041B3D5FBDE77990C6F /* Pods-Arivetask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arivetask.release.xcconfig"; path = "Target Support Files/Pods-Arivetask/Pods-Arivetask.release.xcconfig"; sourceTree = "<group>"; };
 		CD8956316D1841DC9A59497E /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Regular.otf"; path = "../src/assets/fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		D463A13CDFCA4EC7A3A89ACF /* SF-Pro-Text-Thin.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Thin.otf"; path = "../src/assets/fonts/SF-Pro-Text-Thin.otf"; sourceTree = "<group>"; };
-		D7FE0A0486F0FACB3660CBAE /* libPods-Arivetask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Arivetask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D879E6FD228E450BA7C7BD33 /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-RegularItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
 		DDA80A2E7BA447478E18C4DF /* SF-Pro-Text-BlackItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-BlackItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-BlackItalic.otf"; sourceTree = "<group>"; };
 		E147A961C87042E3B3AECD57 /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-SemiboldItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
@@ -80,6 +79,7 @@
 		F1FC880D1E074CA0A0F908A4 /* SF-Pro-Text-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-BoldItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-BoldItalic.otf"; sourceTree = "<group>"; };
 		F4962F52B2AE436EA64900CC /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-MediumItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
 		F6DF9CEF07E94F4682CF1C2C /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Medium.otf"; path = "../src/assets/fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		FBCAF94B638578626E0F2056 /* Pods-Arivetask-ArivetaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Arivetask-ArivetaskTests.debug.xcconfig"; path = "Target Support Files/Pods-Arivetask-ArivetaskTests/Pods-Arivetask-ArivetaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81A2B190B12C0857EAF908B0 /* libPods-Arivetask-ArivetaskTests.a in Frameworks */,
+				C3D0D3FB54DCB71893271A80 /* libPods-Arivetask-ArivetaskTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				314A2F59F384F8019A90ED3C /* libPods-Arivetask.a in Frameworks */,
+				90C5427A5EFFE74C3848569D /* libPods-Arivetask.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				D7FE0A0486F0FACB3660CBAE /* libPods-Arivetask.a */,
-				6F9E4D69E42B4DF37B2A5C35 /* libPods-Arivetask-ArivetaskTests.a */,
+				11A8505CD26785DD92EFB593 /* libPods-Arivetask.a */,
+				A27297CC29B31F9EAEE75197 /* libPods-Arivetask-ArivetaskTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -203,10 +203,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				945384D0FC77813E22B93A04 /* Pods-Arivetask.debug.xcconfig */,
-				5C951E9FCE3499A7B2E27727 /* Pods-Arivetask.release.xcconfig */,
-				4AEF2D1688EE4DEC1E45F43F /* Pods-Arivetask-ArivetaskTests.debug.xcconfig */,
-				8E24F48737062CB72CA44249 /* Pods-Arivetask-ArivetaskTests.release.xcconfig */,
+				2F192559DC1EB365B11986C6 /* Pods-Arivetask.debug.xcconfig */,
+				C8B14041B3D5FBDE77990C6F /* Pods-Arivetask.release.xcconfig */,
+				FBCAF94B638578626E0F2056 /* Pods-Arivetask-ArivetaskTests.debug.xcconfig */,
+				55E3F1C20977A747484774B7 /* Pods-Arivetask-ArivetaskTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -218,12 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ArivetaskTests" */;
 			buildPhases = (
-				13349B83F6AE878FB05473B4 /* [CP] Check Pods Manifest.lock */,
+				C672EC0228FBE9556A8B00CE /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				4BA48E5B4E95CC9D3BE86BB4 /* [CP] Embed Pods Frameworks */,
-				ED6F36427EFF2C97564CA940 /* [CP] Copy Pods Resources */,
+				E6F94974AC5E50632539876B /* [CP] Embed Pods Frameworks */,
+				BC42C667A179B73DF3A85A1E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,14 +239,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Arivetask" */;
 			buildPhases = (
-				8F6809D442858C740EA04F76 /* [CP] Check Pods Manifest.lock */,
+				A8E0CDDD3042DCB2E6B1720E /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				0E102FC849402994EE64E4EB /* [CP] Embed Pods Frameworks */,
-				767DE5A0D9287A7EBFF6534A /* [CP] Copy Pods Resources */,
+				8671E6C5729B7700436CE3CD /* [CP] Embed Pods Frameworks */,
+				53992D90E4EBDE81756E6877 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,63 +345,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		0E102FC849402994EE64E4EB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Arivetask/Pods-Arivetask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Arivetask/Pods-Arivetask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arivetask/Pods-Arivetask-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		13349B83F6AE878FB05473B4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Arivetask-ArivetaskTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4BA48E5B4E95CC9D3BE86BB4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Arivetask-ArivetaskTests/Pods-Arivetask-ArivetaskTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Arivetask-ArivetaskTests/Pods-Arivetask-ArivetaskTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arivetask-ArivetaskTests/Pods-Arivetask-ArivetaskTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		767DE5A0D9287A7EBFF6534A /* [CP] Copy Pods Resources */ = {
+		53992D90E4EBDE81756E6877 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -418,7 +362,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arivetask/Pods-Arivetask-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8F6809D442858C740EA04F76 /* [CP] Check Pods Manifest.lock */ = {
+		8671E6C5729B7700436CE3CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arivetask/Pods-Arivetask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arivetask/Pods-Arivetask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arivetask/Pods-Arivetask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8E0CDDD3042DCB2E6B1720E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -440,7 +401,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED6F36427EFF2C97564CA940 /* [CP] Copy Pods Resources */ = {
+		BC42C667A179B73DF3A85A1E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -455,6 +416,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arivetask-ArivetaskTests/Pods-Arivetask-ArivetaskTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C672EC0228FBE9556A8B00CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Arivetask-ArivetaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6F94974AC5E50632539876B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arivetask-ArivetaskTests/Pods-Arivetask-ArivetaskTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Arivetask-ArivetaskTests/Pods-Arivetask-ArivetaskTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Arivetask-ArivetaskTests/Pods-Arivetask-ArivetaskTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -509,7 +509,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4AEF2D1688EE4DEC1E45F43F /* Pods-Arivetask-ArivetaskTests.debug.xcconfig */;
+			baseConfigurationReference = FBCAF94B638578626E0F2056 /* Pods-Arivetask-ArivetaskTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -536,7 +536,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E24F48737062CB72CA44249 /* Pods-Arivetask-ArivetaskTests.release.xcconfig */;
+			baseConfigurationReference = 55E3F1C20977A747484774B7 /* Pods-Arivetask-ArivetaskTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -560,7 +560,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 945384D0FC77813E22B93A04 /* Pods-Arivetask.debug.xcconfig */;
+			baseConfigurationReference = 2F192559DC1EB365B11986C6 /* Pods-Arivetask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -586,7 +586,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C951E9FCE3499A7B2E27727 /* Pods-Arivetask.release.xcconfig */;
+			baseConfigurationReference = C8B14041B3D5FBDE77990C6F /* Pods-Arivetask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

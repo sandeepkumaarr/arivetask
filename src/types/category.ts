@@ -8,8 +8,13 @@ export type SubCategory = {
   rating: object;
 };
 
+export type CategoryItem = {
+  id: string;
+  category: string;
+};
+
 export type Category = {
-  CategoryList: Array<string>;
+  CategoryList: Array<CategoryItem>;
   SubCategoryList: Array<SubCategory>;
   categoryLoading: boolean;
   subCategoryLoading: boolean;

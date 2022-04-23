@@ -83,8 +83,8 @@ export default ProductCard;
 
 const styles = StyleSheet.create({
   image: {
-    width: Math.round(moderateScale(60)),
-    height: Math.round(moderateVerticalScale(60)),
+    width: Math.round(moderateScale(90)),
+    height: Math.round(moderateVerticalScale(90)),
   },
   shadow: {
     shadowColor: 'Black',

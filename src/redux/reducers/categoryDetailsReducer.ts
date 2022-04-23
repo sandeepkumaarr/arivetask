@@ -1,5 +1,7 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {Category} from '../../types/category';
+import {v4 as uuidv4} from 'uuid';
+
+import {Category, CategoryItem} from '../../types/category';
 import {
   getAllProducts,
   getCategory,
@@ -21,10 +23,22 @@ export const CategoryDetailsSlice = createSlice({
     builder.addCase(getCategory.pending, (state, {payload}) => {
       state.categoryLoading = true;
     });
-    builder.addCase(getCategory.fulfilled, (state, {payload}) => {
-      state.categoryLoading = false;
-      state.CategoryList = payload;
-    });
+    builder.addCase(
+      getCategory.fulfilled,
+      (state, {payload}: PayloadAction<CategoryItem[]>) => {
+        state.categoryLoading = false;
+        let CategoryListModified = payload.map((item: any) => {
+          return {
+            id: uuidv4(),
+            category: item,
+          };
+        });
+        state.CategoryList = [
+          {id: uuidv4(), category: 'AllProducts'},
+          ...CategoryListModified,
+        ];
+      },
+    );
     builder.addCase(getCategory.rejected, (state, {payload}) => {
       state.categoryLoading = false;
     });

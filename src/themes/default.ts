@@ -3,7 +3,7 @@ import {moderateScale, moderateVerticalScale} from 'react-native-size-matters';
 
 const palette = {
   cyanBlue: '#7fa2bb',
-  WhiteSmoke: '#f5f5f5',
+  WhiteSmoke: '#e5e5e5',
   grey: '#8a8a8a',
 
   black: '#0B0B0B',

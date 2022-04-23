@@ -1,18 +1,20 @@
 import {StyleSheet, SafeAreaView, FlatList} from 'react-native';
-import React from 'react';
+import React, {useState} from 'react';
 import {RouteProp, useRoute} from '@react-navigation/native';
 import {Banner, Box, Button, ProductCard} from '../components';
 import {Source} from 'react-native-fast-image';
 import {State} from '../types/commons';
 import {useSelector} from 'react-redux';
 import {moderateScale, moderateVerticalScale} from 'react-native-size-matters';
+import {useDispatch} from 'react-redux';
+import {
+  getAllProducts,
+  getSubCategory,
+} from '../redux/actions/CategoryDetailsActions';
+import ProductCardPlaceholder from '../skeletons/ProductCardPlaceholder';
 
 const CategoryDetailScreen = () => {
-  let route: RouteProp<
-    {params: {header: string; image: number | Source}},
-    'params'
-  > = useRoute();
-  const {params} = route;
+  const dispatch = useDispatch();
   const CategoryListData = useSelector(
     (state: State) => state.categoryDetails.CategoryList,
   );
@@ -20,6 +22,28 @@ const CategoryDetailScreen = () => {
   const SubCategoryListData = useSelector(
     (state: State) => state.categoryDetails.SubCategoryList,
   );
+
+  const SubCatLoading = useSelector(
+    (state: State) => state.categoryDetails.subCategoryLoading,
+  );
+
+  let route: RouteProp<
+    {
+      params: {
+        header: string;
+        image: number | Source;
+      };
+    },
+    'params'
+  > = useRoute();
+  const {params} = route;
+  const [selectedSubCategory, setselectedSubCategory] = useState(
+    CategoryListData[0]?.id,
+  );
+
+  const handleSubCatChange = (value: string) => {
+    dispatch(getSubCategory(value));
+  };
 
   return (
     <SafeAreaView style={{flex: 1}}>
@@ -44,15 +68,21 @@ const CategoryDetailScreen = () => {
           numColumns={2}
           renderItem={({item}) => {
             return (
-              <ProductCard
-                ProductName={item.title}
-                ProductDescription={item.description}
-                Price={`${item.price.toString()} €`}
-                image={{
-                  uri: item.image,
-                }}
-                marginVertical={5}
-              />
+              <>
+                {SubCatLoading ? (
+                  <ProductCardPlaceholder key={item.id.toString()} />
+                ) : (
+                  <ProductCard
+                    ProductName={item.title}
+                    ProductDescription={item.description}
+                    Price={`${item.price.toString()} €`}
+                    image={{
+                      uri: item.image,
+                    }}
+                    marginVertical={5}
+                  />
+                )}
+              </>
             );
           }}
           ListHeaderComponent={() => (
@@ -60,18 +90,33 @@ const CategoryDetailScreen = () => {
               <FlatList
                 horizontal
                 showsHorizontalScrollIndicator={false}
-                data={['All Products', ...CategoryListData]}
+                data={CategoryListData}
                 contentContainerStyle={styles.flatlistContainer}
                 renderItem={({item}) => {
                   return (
                     <Button
-                      key={item.toString()}
-                      onPress={() => console.log('Button Pressed')}
-                      label={item}
-                      backgroundColor={'secondary'}
+                      key={item.id.toString()}
+                      onPress={() => {
+                        setselectedSubCategory(item.id);
+                        if (
+                          item?.category.toLowerCase().includes('allproducts')
+                        ) {
+                          dispatch(getAllProducts());
+                        } else {
+                          handleSubCatChange(item.category);
+                        }
+                      }}
+                      label={item.category}
+                      backgroundColor={
+                        item.id === selectedSubCategory
+                          ? 'secondary'
+                          : 'primary'
+                      }
                       variant="subcategory"
                       marginHorizontal={2}
-                      textVariants="button"
+                      textVariants={
+                        item.id === selectedSubCategory ? 'button' : 'buttonoff'
+                      }
                     />
                   );
                 }}
@@ -93,5 +138,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginVertical: Math.round(moderateVerticalScale(20)),
     marginLeft: Math.round(moderateScale(20)),
+    marginRight: Math.round(moderateScale(20)),
   },
 });
