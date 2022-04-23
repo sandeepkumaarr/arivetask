@@ -10,7 +10,9 @@ import {
   LayoutProps,
   ResponsiveValue,
 } from '@shopify/restyle';
-import {Image, ImageSourcePropType, StyleSheet} from 'react-native';
+import {StyleSheet} from 'react-native';
+import FastImage, {Source} from 'react-native-fast-image';
+
 import {Theme} from '../themes/default';
 import Box from './Box';
 import {moderateScale, moderateVerticalScale} from 'react-native-size-matters';
@@ -32,7 +34,7 @@ type Props = VariantProps<Theme, 'ProductCardVariants'> &
     ProductName: string;
     ProductDescription: string;
     Price: string;
-    image: ImageSourcePropType;
+    image: number | Source;
   };
 
 const ProductCard = ({...rest}: Props) => {
@@ -66,7 +68,7 @@ const ProductCard = ({...rest}: Props) => {
         borderRadius={Math.round(moderateScale(10))}
         marginBottom={4}
         style={styles.shadow}>
-        <Image style={styles.image} source={image} />
+        <FastImage style={styles.image} source={image} />
       </Box>
       <Box width={Math.round(moderateScale(130))}>
         {TextItem(ProductName, 1, 'ProductName')}

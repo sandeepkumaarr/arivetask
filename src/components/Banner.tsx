@@ -10,7 +10,9 @@ import {
   useRestyle,
   ResponsiveValue,
 } from '@shopify/restyle';
-import {ImageBackground, StyleSheet, ImageSourcePropType} from 'react-native';
+import {StyleSheet} from 'react-native';
+import FastImage, {Source} from 'react-native-fast-image';
+
 import {Theme} from '../themes/default';
 import Box from './Box';
 import Text from './Text';
@@ -29,7 +31,7 @@ type Props = VariantProps<Theme, 'BannerVariants'> &
   LayoutProps<Theme> &
   SpacingProps<Theme> & {
     bannerText: string;
-    image: ImageSourcePropType;
+    image: number | Source;
     extraStyles?: object;
     textVariant: ResponsiveValue<keyof Theme['textVariants'], Theme>;
     textStyle?: object;
@@ -41,11 +43,14 @@ const Banner = ({bannerText, ...rest}: Props) => {
 
   return (
     <BannerContainer {...props}>
-      <ImageBackground source={image} style={[styles.image, extraStyles]}>
+      <FastImage
+        style={[styles.image, extraStyles]}
+        source={image}
+        resizeMode={FastImage.resizeMode.cover}>
         <Text variant={textVariant} style={textStyle}>
           {bannerText}
         </Text>
-      </ImageBackground>
+      </FastImage>
     </BannerContainer>
   );
 };
